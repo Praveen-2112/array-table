@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+		<html>
+			<head>
+				<title>array-method</title>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width,initial-scale=1.0">
+				<style>
+					table,th,td{
+					    border:2px solid black;
+						border-collapse:collapse;
+						
+					}
+				
+				</style>
+			</head>
+			<body>
+				<table>
+					<caption>array methods</caption>
+						<tr>
+							<th>Method</th>
+							<th>Perform Working</th>
+							<th>Return Value</th>
+							<th>Example</th>
+							<th>Output</th>
+						</tr>
+						<tr>
+							<td>Push()</td>
+							<td>Method adds item in end value</td>
+							<td>Length of the array new item added in end</td>
+							<td>let a=[11,22,34,45,praveen];<br>
+								document.write(a,"");<br>
+								const b=a.push(21,22,34,35);<br>
+								document.write(a,"");<br>
+								document.write(b,"");<br></td>
+							<td>11,22,34,45,praveen,21,22,34,35.<br>
+							    b=9</td>
+						</tr>
+						<tr>
+							<td>unshift()</td>
+							<td>Method adds item in starting value</td>
+							<td>Length of the array new item added in start</td>
+							<td>let a=[1,2,3,4,5];<br>
+								document.write(a,"");<br>
+								const b=a.unshift("praveen","murugan");<br>
+								document.write(a,"");<br>
+								document.write(b,"");<br></td>
+							<td>array=[1,2,3,4,5].<br>
+								a=[Praveen,murugan,1,2,3,4,5]<br>
+							    b=7.</td>
+						</tr>
+						<tr>
+							<td rowspan=3>Pop()</td>
+							<td rowspan=3>Method are remove of end value one more value</td>
+							<td rowspan=3>The method removed  end of  length  value</td>
+							<td>let a=[1,2,3,"hai"];<br>
+								document.write(a,"");<br>
+								const b=a.pop();<br>
+								document.write(a,"");<br>
+								document.write(b,"");<br></td>
+							<td>array=[1,2,3,4,"hai"]<br>a=1,2,3<br>
+							    b=hai</td>
+						</tr>
+						<tr>
+							<td>let a=[1,2,3,"hai"];<br>
+								document.write(a,"");<br>
+								const b=a.pop();<br>
+								const c=a.pop();<br>
+								document.write(a,"");<br>
+								document.write(b,"");<br>document.write(c,"");<br></td>
+							<td>array=[1,2,3,hai].<br>a=[1,2,3]<br>b=hai<br>c=3</td>
+						</tr>
+						<tr>
+							<td>let a=[1,2,3,4,5,6];<br>
+								document.write(a,"");<br>
+								const b=a.pop(4);<br>
+								document.write(a,"");<br>
+								document.write(b,"");<br></td>
+							<td>array=[1,2,3,4,5,6]<br>a=[1,2,3,4,5]<br>
+							    b=6</td>
+						</tr>
+						<tr>
+							<td rowspan=3>shift()</td>
+							<td rowspan=3>Method are remove of start value one more value</td>
+							<td rowspan=3>The method removed start length  value</td>
+							<td>let a=[1,2,3,"welcome"];<br>
+								document.write(a,"");<br>
+								const b=a.shift();<br>
+								document.write(a,"");<br>
+								document.write(b,"");<br></td>
+							<td>array[1,2,3,"welcome"]<br>2,3,welcome<br>
+							    b=1</td>
+						</tr>
+						<tr>
+							<td>let a=[1,2,3,"welcome"];<br>
+								document.write(a,"");<br>
+								const b=a.shift();<br>
+								const c=a.shift();<br>
+								document.write(a,"");<br>
+								document.write(b,"");<br></td>
+							<td>array=[1,2,3,"welcome"]<br>
+								a=3,welcome<br>b=1<br>c=2</td>
+						</tr>
+						<tr>
+							<td>let a=[21,22,23,24,25,26];<br>
+								document.write(a,"");<br>
+								const b=a.shift(4);<br>
+								document.write(a,"");<br>
+								document.write(b,"");<br></td>
+							<td>21,22,23,24,25,26.<br>21,22,23,24,25.<br>
+							    b=26.</td>
+						</tr>
+						<tr>
+							<td>Splice</td>
+							<td>The Method remove or/add in array elements </td>
+							<td>The return of the element in added</td>
+							<td>let a=[1,2,3,7,33,65];<br>document.write(a,"");<br>const b=a.splice(2,0,praveen);<br>
+								document.write(a,"");<br>document.write(b,"");<br></td>
+							<td>1,2,3,7,33,65<br>1,2,praveen,3,7,33,65.<br>b=23.</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>let a=[1,2,3,4,7];<br>document.write(a,"");<br>const b=a.splice(3,1,-22,44);<br>
+								document.write(a,"");<br>document.write(b,"");<br></td>
+							<td>1,2,3,7.<br>a=1,2,3,-22,44<br>b=7.</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>let a=[21,2,3,4,7];<br>document.write(a,"");<br>
+							    const b=a.splice(-1,0,22,44,23);<br>
+								document.write(a,"");<br>document.write(b,"");<br></td>
+							<td>1,2,3,4,7.<br>1,2,3,22,44,23,33,7<br></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>let a=[1,2,3,4,7];<br>document.write(a,"");<br>
+							    const b=a.splice(1,2,11,22,33);<br>const c=a.splice(2,0,22,44);
+								document.write(a,"");<br>document.write(b,"");<br></td>
+							<td>1,2,3,4,7.<br>a=1,11,22,44,22,33,7.<br>b=2,3<br></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>let a=[1,2,3,4,7];<br>document.write(a,"");<br>
+							    const b=a.splice(1);<br>
+								document.write(a,"");<br>document.write(b,"");<br></td>
+							<td>1,2,3,4,7<br>a=1<br>2,3,7</td>
+						</tr>
+						<tr>
+							<td>Slice()</td>
+							<td>The Method remove or/add in array elements </td>
+							<td>Check the new array change in the value</td>
+							<td>let a=[21,22,23,24,25,26];<br>document.write(a,"");<br>const b=a.slice(1,5);<br>
+								document.write(a,"");<br>document.write(b,"");<br></td>
+							<td>21,22,23,24,25,26.<br>21,22,24,25,26.<br>b=25,26.</td>
+						</tr>
+						<tr>
+							<td>Slice()</td>
+							<td> </td>
+							<td></td>
+							<td>let a=[21,22,23,24,25,26];<br>document.write(a,"");<br>const b=a.splice(2,1);<br>
+								document.write(a,"");<br>document.write(b,"");<br></td>
+							<td>21,22,23,24,25,26.<br>21,22,24,25,26.<br>b=23.</td>
+						</tr>
+						<tr>
+							<td>Concat()</td>
+							<td>The Method remove or/add in array elements </td>
+							<td>The return of the element in added</td>
+							<td>let a=[21,22,23,24,25,26];<br>let b=[31,32,33,34,35,36];<br>
+							     let c=[41,42,43,44,45,46];<br>const d=a.concat(a,b,c)<br>document.write(a,b,c,d)<br></td>
+							<td>21,22,23,24,25,26<br>31,32,33,34,35,36<br>41,42,43,44,45,46<br>21,22,23,24,25,26,31,32,33,34,35,36,41,42,43,44,45,46 </td>	 
+						</tr>
+						<tr>
+							<td>Concat()</td>
+							<td></td>
+							<td></td>
+							<td>let a=[21,22,23,24,25,26];<br>let b=[31,32,33,34,35,36];<br>
+							     let c=[41,42,43,44,45,46];<br>const d=a.concat(b)<br>document.write(a,b,c,d)<br></td>
+							<td>21,22,23,24,25,26<br>31,32,33,34,35,36<br>41,42,43,44,45,46<br>21,22,23,24,25,26,31,32,33,34,35,36 </td>
+						</tr>
+						<tr>
+							<td>Concat()</td>
+							<td></td>
+							<td></td>
+							<td>let a=[21,22,23,24,25,26];<br>let b=[31,32,33,34,35,36];<br>
+							     let c=[41,42,43,44,45,46];<br>const d=a.concat(c,b)<br>document.write(a,b,c,d)<br></td>
+							<td>21,22,23,24,25,26<br>31,32,33,34,35,36<br>41,42,43,44,45,46<br>21,22,23,24,25,26,41,42,43,44,45,46,31,32,33,34,35,36 </td>
+						</tr>
+						<tr>
+							<td>Index()</td>
+							<td>The Method remove or/add in array elements </td>
+							<td>The return of the element in added</td>
+							<td>let a=[21,22,23,24,25,26];<br>let b=[31,32,33,34,35,36];<br>
+							     let c=[41,42,43,44,45,46];<br>const d=a.concat(a,b,c)<br>document.write(a,b,c,d)<br></td>
+							<td>21,22,23,24,25,26<br>31,32,33,34,35,36<br>41,42,43,44,45,46<br>21,22,23,24,25,26,31,32,33,34,35,36,41,42,43,44,45,46 </td>	 
+						</tr>
+						<tr>
+							<td>Index()</td>
+							<td>The Method remove or/add in array elements </td>
+							<td>The return of the element in added</td>
+							<td>let a=[21,22,23,24,25,26];<br>let b=[31,32,33,34,35,36];<br>
+							     let c=[41,42,43,44,45,46];<br>const d=a.concat(a,b,c)<br>document.write(a,b,c,d)<br></td>
+							<td>21,22,23,24,25,26<br>31,32,33,34,35,36<br>41,42,43,44,45,46<br>21,22,23,24,25,26,31,32,33,34,35,36,41,42,43,44,45,46 </td>	 
+						</tr>
+				</table>
+			<script src="js/main.js"></script>
+			</body>
+		</html>
+		
+		
